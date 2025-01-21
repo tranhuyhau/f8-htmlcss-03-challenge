@@ -32,11 +32,11 @@
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body>
+    <body style="min-height: 10000px">
         <header class="header public-sans">
             <div class="container">
                 <div class="header__top">
-                    <img src="./assets/icon/logo.svg" alt="" />
+                    <img loading="lazy" src="./assets/icon/logo.svg" alt="" />
                     <ul class="header__nav">
                         <li><a class="header__nav-item header__nav-item--active" href="#!">Home</a></li>
                         <li><a class="header__nav-item" href="#!">About</a></li>
@@ -45,7 +45,323 @@
                     </ul>
                     <a href="#!" class="btn">Sign Up</a>
                 </div>
+                <div class="header__hero">
+                    <div class="header__hero-left">
+                        <h1 class="header__heading">We’re a creative design agency.</h1>
+                        <p class="header__desc">
+                            A brilliant, modular agency template for startup’s build yours toady.
+                        </p>
+                        <div class="header__call">
+                            <a href="#!" class="btn">Get in touch</a>
+                            <button class="header__watch-video">
+                                <span class="header__play">
+                                    <svg
+                                        width="8"
+                                        height="10"
+                                        viewBox="0 0 8 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M7.48979 4.22586C8.15106 4.61996 8.13773 5.58212 7.4658 5.95775L1.49682 9.29454C0.824887 9.67017 -0.00170366 9.17755 0.00896126 8.40782L0.103701 1.57014C0.114366 0.800411 0.954284 0.330874 1.61555 0.724974L7.48979 4.22586Z"
+                                            fill="#FEF6FB"
+                                        />
+                                    </svg>
+                                </span>
+                                Watch Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__hero-right">
+                        <figure class="header__list-image">
+                            <img loading="lazy" class="header__image" src="./assets/image/hero-1.jpg" alt="" />
+                            <img loading="lazy" class="header__image" src="./assets/image/hero-2.jpg" alt="" />
+                            <img loading="lazy" class="header__image" src="./assets/image/hero-3.jpg" alt="" />
+                        </figure>
+                        <div class="header__decorate">
+                            <span class="header__decorate-1">
+                                <img
+                                    loading="lazy"
+                                    class="header__avstract-1"
+                                    src="./assets/image/avstract-1.svg"
+                                    alt=""
+                                />
+                                <img loading="lazy" class="header__line-1" src="./assets/image/line-1.svg" alt="" />
+                            </span>
+                            <span class="header__decorate-2">
+                                <img loading="lazy" class="header__line-2" src="./assets/image/line-2.svg" alt="" />
+                                <img
+                                    loading="lazy"
+                                    class="header__avstract-2"
+                                    src="./assets/image/avstract-2.svg"
+                                    alt=""
+                                />
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
+        <main>
+            <section class="brand">
+                <div class="container">
+                    <div class="brand__body">
+                        <img loading="lazy" src="./assets/icon/google.svg" alt="" />
+                        <img loading="lazy" src="./assets/icon/slack.svg" alt="" />
+                        <div class="brand__merge">
+                            <img loading="lazy" src="./assets/icon/discord.svg" alt="" />
+                            <img loading="lazy" src="./assets/icon/agworld.svg" alt="" />
+                        </div>
+                        <img loading="lazy" src="./assets/icon/riotinto.svg" alt="" />
+                        <img loading="lazy" src="./assets/icon/heroku.svg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <header class="services__header">
+                        <div class="sevices__header-text">
+                            <span class="title">OUR SERVICES</span>
+                            <h2 class="heading-lv2 sevices__heading">We offer a wide range of design services</h2>
+                        </div>
+                        <div class="sevices__arrow">
+                            <a href="#!" class="sevices__arrow-btn">
+                                <svg
+                                    width="22"
+                                    height="13"
+                                    viewBox="0 0 22 13"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="sevices__arrow-btn">
+                                <svg
+                                    width="22"
+                                    height="13"
+                                    viewBox="0 0 22 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 6.29412H21M21 6.29412L15.7059 1M21 6.29412L15.7059 11"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </header>
+                    <div class="services__body">
+                        <article class="services__item">
+                            <figure class="services__item-image">
+                                <a href="#!">
+                                    <img
+                                        loading="lazy"
+                                        class="services__image-thumb"
+                                        src="./assets/image/services-1.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </figure>
+                            <div class="services__item-info">
+                                <h3>
+                                    <a href="#!" class="services__info-title">Branding</a>
+                                </h3>
+                                <p class="services__info-desc">
+                                    Create beautiful Agency website with Boluethat converts more visitors than any
+                                    website.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="services__item">
+                            <figure class="services__item-image">
+                                <a href="#!">
+                                    <img
+                                        loading="lazy"
+                                        class="services__image-thumb"
+                                        src="./assets/image/services-2.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </figure>
+                            <div class="services__item-info">
+                                <h3>
+                                    <a href="#!" class="services__info-title">Web Design</a>
+                                </h3>
+                                <p class="services__info-desc">
+                                    Create beautiful Agency website with Boluethat converts more visitors than any
+                                    website.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="services__item">
+                            <figure class="services__item-image">
+                                <a href="#!">
+                                    <img
+                                        loading="lazy"
+                                        class="services__image-thumb"
+                                        src="./assets/image/services-3.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </figure>
+                            <div class="services__item-info">
+                                <h3>
+                                    <a href="#!" class="services__info-title">Graphic Design</a>
+                                </h3>
+                                <p class="services__info-desc">
+                                    Create beautiful Agency website with Boluethat converts more visitors than any
+                                    website.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__body">
+                        <div class="about__media">
+                            <figure class="about__image">
+                                <img loading="lazy" class="about__thumb" src="./assets/image/about-1.jpg" alt="" />
+                                <img loading="lazy" class="about__thumb" src="./assets/image/about-2.jpg" alt="" />
+                            </figure>
+                            <div class="about__desingners public-sans">
+                                <p class="desingners__title">All Desingners</p>
+                                <p class="desingners__desc">Total Balance</p>
+                                <p class="desingners__number">40%</p>
+                                <meter class="desingners__meter" value="0.4" min="0" max="1">at</meter>
+                                <p class="desingners__loading">Loading...</p>
+                                <span class="desingners__dot">
+                                    <span class="dot__small"></span>
+                                </span>
+                                <div class="desingners__teams">
+                                    <span class="teams__desc"> Teams: </span>
+                                    <figure class="teams__avatar">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/avatar-1.jpg"
+                                            alt=""
+                                            class="avatar__thumb"
+                                        />
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/avatar-2.jpg"
+                                            alt=""
+                                            class="avatar__thumb"
+                                        />
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/avatar-3.jpg"
+                                            alt=""
+                                            class="avatar__thumb"
+                                        />
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/avatar-4.jpg"
+                                            alt=""
+                                            class="avatar__thumb"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="desingners__decorate">
+                                <span class="desingners__decorate-1">
+                                    <img
+                                        loading="lazy"
+                                        class="desingners__avstract-1"
+                                        src="./assets/image/avstract-3.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        loading="lazy"
+                                        class="desingners__line-1"
+                                        src="./assets/image/line-3.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="about__info">
+                            <span class="title"> ABOUT US </span>
+                            <h2 class="heading-lv2 about__heading">We are an extention of your creative team</h2>
+                            <p class="about__desc">
+                                At the start of every project, we cusomizea detailed project plan together with you set
+                                exectationns ensure alighment and define key milestones and deiverbles.
+                            </p>
+                            <div class="about__detail">
+                                <span class="detail__stats">48%</span>
+                                <p class="detail__desc">
+                                    Are you strive for two things in design simplicity and clarity. Great design is born
+                                    of those two things
+                                </p>
+                            </div>
+                            <div class="about__detail">
+                                <span class="detail__stats">26%</span>
+                                <p class="detail__desc">
+                                    Are you strive for two things in design simplicity and clarity. Great design is born
+                                    of those two things
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="process">
+                <div class="container">
+                    <div class="process__title">
+                        <span class="title">OUR PROCESS</span>
+                        <h2 class="heading-lv2 process__heading">A simple ,yet effective three step process</h2>
+                    </div>
+                    <div class="process__list">
+                        <section class="process__item process__item-img">
+                            <span class="item__order">01.</span>
+                            <div class="item__title">
+                                <h3 class="item__heading">Project idea</h3>
+                                <a href="#!" class="item__more">Learn More</a>
+                            </div>
+                            <figure class="">
+                                <img class="item__image" src="./assets/image/process.png" alt="" loading="lazy" />
+                            </figure>
+                        </section>
+                        <section class="process__item">
+                            <span class="item__order">02.</span>
+                            <div class="item__title">
+                                <h3 class="item__heading">Brainstormaing</h3>
+                                <a href="#!" class="item__more">Learn More</a>
+                            </div>
+                            <p class="item__desc">
+                                We customse a ensure aligment and difine key mileones and defiverables experience tells
+                                us the best solutions are the ones deated with clients.
+                            </p>
+                        </section>
+                        <section class="process__item">
+                            <span class="item__order">03.</span>
+                            <div class="item__title">
+                                <h3 class="item__heading">Execution</h3>
+                                <a href="#!" class="item__more">Learn More</a>
+                            </div>
+                            <p class="item__desc">
+                                We customse a ensure aligment and difine key mileones and defiverables experience tells
+                                us the best solutions are the ones deated with clients.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

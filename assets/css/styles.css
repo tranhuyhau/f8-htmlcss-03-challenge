@@ -80,7 +80,7 @@ a {
     width: 66px;
     height: 2px;
     transform: translateY(-10px);
-    background: #152427;
+    background: currentColor;
 }
 
 /* Header */
@@ -642,7 +642,7 @@ a {
     line-height: 0.722;
 }
 
-.item__title {
+.process__item-title {
     position: relative;
     margin-left: 50px;
 }
@@ -686,4 +686,168 @@ a {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.555;
+}
+
+/* Project */
+.project {
+    margin-top: 112px;
+    padding: 116px 0 63px;
+    background: #143c3c;
+}
+
+.project__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__heading {
+    margin: 0;
+    width: 457px;
+    color: #e7f9f9;
+}
+
+.header__right {
+    margin-top: 11px;
+    width: 590px;
+}
+
+.right__desc {
+    color: #6a8383;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.555;
+}
+
+.right__link {
+    display: inline-flex;
+    column-gap: 26px;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.555;
+}
+
+.project__video {
+    position: relative;
+    margin-top: 65px;
+}
+
+.video__image {
+    width: 100%;
+    height: 544px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.video__play {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.video__decorate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.video__avstract {
+    position: absolute;
+    top: -75px;
+    right: -45px;
+}
+
+.video__line {
+    position: absolute;
+    top: -165px;
+    right: -60px;
+}
+
+/* Features */
+.features {
+    margin-top: 100px;
+    padding: 40px 0;
+}
+
+.features__header-inner {
+    margin: 0 auto;
+    width: 547px;
+    text-align: center;
+}
+
+.features__heading {
+    margin: 0;
+}
+
+.features__heading::after {
+    content: none;
+}
+
+.features__desc {
+    margin-top: 20px;
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.625;
+}
+
+.features__body {
+    margin-top: 103px;
+    display: flex;
+    column-gap: 45px;
+}
+
+.features__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    transition: 0.3s;
+}
+
+.features__item:hover {
+    transform: translateY(-59px);
+    border-color: transparent;
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+    transition: 0.3s;
+}
+
+.features__item-title {
+    margin-top: 23px;
+    color: #152427;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.features__item-desc {
+    margin-top: 9px;
+    text-align: center;
+    width: 264px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.714;
+}
+
+.features__item:first-child .features__item-desc {
+    width: 286px;
 }

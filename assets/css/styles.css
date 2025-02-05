@@ -16,6 +16,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a,
+textarea,
+section,
+button,
+input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* Common */
 .line-clamp {
     display: -webkit-box;
@@ -50,6 +62,7 @@ a {
     border-radius: 40px;
     border: 1.5px solid #143c3c;
     width: 173px;
+    font-weight: 500;
     background: #143c3c;
     font-size: 1.8rem;
     line-height: 57px;
@@ -657,6 +670,10 @@ a {
 .process__item-title {
     position: relative;
     margin-left: 50px;
+}
+
+.process__item:first-child .process__item-title {
+    margin-left: 65px;
 }
 
 .item__heading {

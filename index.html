@@ -31,19 +31,45 @@
 
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
+        <!-- Menu Table, Mobile -->
+        <div class="drawer">
+            <input type="checkbox" name="checkbox" class="drawer__checkbox" id="checkbox" hidden />
+            <label for="checkbox" class="background-menu"></label>
+            <div class="drawer__menu">
+                <ul class="header__nav" id="nav__menu"></ul>
+            </div>
+        </div>
+
         <header class="header public-sans">
             <div class="container">
                 <div class="header__top">
-                    <a href="#"><img loading="lazy" src="./assets/icon/logo.svg" alt="" /></a>
-                    <ul class="header__nav">
+                    <a href="#">
+                        <img loading="lazy" src="./assets/icon/logo.svg" alt="" class="logo-lg" />
+                        <div class="logo-sm hidden-on-pc">
+                            <img src="./assets/image/logo-tablet-mobile.svg" alt="" />
+                            <img src="./assets/image/logo-text-tablet-mobile.svg" alt="" />
+                        </div>
+                    </a>
+                    <ul class="header__nav show-on-pc" id="header__nav">
                         <li><a class="header__nav-item header__nav-item--active" href="#">Home</a></li>
                         <li><a class="header__nav-item" href="#about">About</a></li>
                         <li><a class="header__nav-item" href="#blog">Blog</a></li>
                         <li><a class="header__nav-item" href="#contact">Contact</a></li>
                     </ul>
-                    <a href="#!" class="btn">Sign Up</a>
+                    <a href="#!" class="btn btn-sign-up-sm">Sign Up</a>
+                    <!-- Table mobile -->
+                    <label for="checkbox" class="header__icon-menu hidden-on-pc">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="18" height="2" fill="#143C3C" />
+                            <rect y="7" width="18" height="2" fill="#143C3C" />
+                            <rect y="14" width="18" height="2" fill="#143C3C" />
+                        </svg>
+                    </label>
                 </div>
                 <div class="header__hero">
                     <div class="header__hero-left">
@@ -52,7 +78,7 @@
                             A brilliant, modular agency template for startup’s build yours toady.
                         </p>
                         <div class="header__call">
-                            <a href="#!" class="btn">Get in touch</a>
+                            <a href="#!" class="btn hero__btn">Get in touch</a>
                             <button class="header__watch-video">
                                 <div class="header__play">
                                     <svg
@@ -78,7 +104,7 @@
                             <img loading="lazy" class="header__image" src="./assets/image/hero-2.jpg" alt="" />
                             <img loading="lazy" class="header__image" src="./assets/image/hero-3.jpg" alt="" />
                         </figure>
-                        <div class="header__decorate">
+                        <div class="header__decorate show-on-pc">
                             <span class="header__decorate-1">
                                 <img
                                     loading="lazy"
@@ -102,6 +128,7 @@
                 </div>
             </div>
         </header>
+
         <main>
             <section class="brand">
                 <div class="container">
@@ -125,7 +152,7 @@
                             <span class="title">OUR SERVICES</span>
                             <h2 class="heading-lv2 sevices__heading">We offer a wide range of design services</h2>
                         </div>
-                        <div class="sevices__arrow">
+                        <div class="sevices__arrow hidden-on-mobile">
                             <a href="#!" class="sevices__arrow-btn">
                                 <svg
                                     width="22"
@@ -162,70 +189,104 @@
                             </a>
                         </div>
                     </header>
-                    <div class="services__body">
-                        <article class="services__item">
-                            <figure class="services__item-image">
-                                <a href="#!">
-                                    <img
-                                        loading="lazy"
-                                        class="services__image-thumb"
-                                        src="./assets/image/services-1.jpg"
-                                        alt=""
-                                    />
-                                </a>
-                            </figure>
-                            <div class="services__item-info">
-                                <h3>
-                                    <a href="#!" class="services__info-title">Branding</a>
-                                </h3>
-                                <p class="services__info-desc">
-                                    Create beautiful Agency website with Boluethat converts more visitors than any
-                                    website.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="services__item">
-                            <figure class="services__item-image">
-                                <a href="#!">
-                                    <img
-                                        loading="lazy"
-                                        class="services__image-thumb"
-                                        src="./assets/image/services-2.jpg"
-                                        alt=""
-                                    />
-                                </a>
-                            </figure>
-                            <div class="services__item-info">
-                                <h3>
-                                    <a href="#!" class="services__info-title">Web Design</a>
-                                </h3>
-                                <p class="services__info-desc">
-                                    Create beautiful Agency website with Boluethat converts more visitors than any
-                                    website.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="services__item">
-                            <figure class="services__item-image">
-                                <a href="#!">
-                                    <img
-                                        loading="lazy"
-                                        class="services__image-thumb"
-                                        src="./assets/image/services-3.jpg"
-                                        alt=""
-                                    />
-                                </a>
-                            </figure>
-                            <div class="services__item-info">
-                                <h3>
-                                    <a href="#!" class="services__info-title">Graphic Design</a>
-                                </h3>
-                                <p class="services__info-desc">
-                                    Create beautiful Agency website with Boluethat converts more visitors than any
-                                    website.
-                                </p>
-                            </div>
-                        </article>
+                    <div class="services__content-mobile">
+                        <a href="#!" class="sevices__arrow-btn show-on-mobile">
+                            <svg
+                                width="6"
+                                height="10"
+                                viewBox="0 0 6 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 5.23529H1.11482M1.11482 5.23529L5 1M1.11482 5.23529L5 9"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                        <div class="services__body">
+                            <article class="services__item">
+                                <figure class="services__item-image">
+                                    <a href="#!">
+                                        <img
+                                            loading="lazy"
+                                            class="services__image-thumb"
+                                            src="./assets/image/services-1.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </figure>
+                                <div class="services__item-info">
+                                    <h3>
+                                        <a href="#!" class="services__info-title">Branding</a>
+                                    </h3>
+                                    <p class="services__info-desc">
+                                        Create beautiful Agency website with Boluethat converts more visitors than any
+                                        website.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="services__item">
+                                <figure class="services__item-image">
+                                    <a href="#!">
+                                        <img
+                                            loading="lazy"
+                                            class="services__image-thumb"
+                                            src="./assets/image/services-2.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </figure>
+                                <div class="services__item-info">
+                                    <h3>
+                                        <a href="#!" class="services__info-title">Web Design</a>
+                                    </h3>
+                                    <p class="services__info-desc">
+                                        Create beautiful Agency website with Boluethat converts more visitors than any
+                                        website.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="services__item">
+                                <figure class="services__item-image">
+                                    <a href="#!">
+                                        <img
+                                            loading="lazy"
+                                            class="services__image-thumb"
+                                            src="./assets/image/services-3.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </figure>
+                                <div class="services__item-info">
+                                    <h3>
+                                        <a href="#!" class="services__info-title">Graphic Design</a>
+                                    </h3>
+                                    <p class="services__info-desc">
+                                        Create beautiful Agency website with Boluethat converts more visitors than any
+                                        website.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <a href="#!" class="sevices__arrow-btn show-on-mobile">
+                            <svg
+                                width="6"
+                                height="10"
+                                viewBox="0 0 6 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M5 5.23529H4.88518M4.88518 5.23529L1 1M4.88518 5.23529L1 9"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -277,7 +338,7 @@
                                     </figure>
                                 </div>
                             </div>
-                            <div class="desingners__decorate">
+                            <div class="desingners__decorate hidden-on-mobile">
                                 <span class="desingners__decorate-1">
                                     <img
                                         loading="lazy"
@@ -333,7 +394,7 @@
                                 <h3 class="item__heading">Project idea</h3>
                                 <a href="#!" class="item__more">Learn More</a>
                             </div>
-                            <figure class="">
+                            <figure class="show-on-pc">
                                 <img class="item__image" src="./assets/image/process.png" alt="" loading="lazy" />
                             </figure>
                         </section>
@@ -390,7 +451,7 @@
                         <span class="video__play">
                             <img src="./assets/icon/play-2.svg" alt="" />
                         </span>
-                        <div class="video__decorate">
+                        <div class="video__decorate show-on-pc">
                             <span class="video__decorate">
                                 <img
                                     loading="lazy"
@@ -656,5 +717,10 @@
                 <div class="footer__line"></div>
             </div>
         </footer>
+        <script>
+            const headerNav = document.querySelector('#header__nav');
+            const menuNav = document.querySelector('#nav__menu');
+            menuNav.innerHTML = headerNav.innerHTML;
+        </script>
     </body>
 </html>
